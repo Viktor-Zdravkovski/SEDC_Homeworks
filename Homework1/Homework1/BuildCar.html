@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/BMW.svg.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Car Dealership</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="box">
+                <a href="Home.html"><img src="/assets/BmwKola.png" alt="" class="logo"></a>
+            </div>
+            <div class="box">
+                <form action="post">
+                    <input type="text" placeholder="Search anything..." class="searchBox">
+                    <button type="submit" class="searchbutton">Search</button>
+                </form>
+            </div>
+            <div class="box znaminja">
+                <div class="znamenca">
+                    <a href=""><img src="./assets/zameMakedonija.png" alt="" width="40px"></a>
+                    <a href=""><img src="./assets/znameAnglija.png" alt="" width="40px"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+    <hr>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="Home.html">Home</li></a>
+            <li><a href="Contacts.html">Contacts</li></a>
+            <li><a href="Location.html">Location</li></a>
+            <li><a href="BuildCar.html">Build your car</a></li>
+            <ul id="SignIn">
+                <li><a href="SignIn.html">Sign in</li></a>
+                <li><a href="LogIn.html">Log in</li></a>
+            </ul>
+        </ul>
+    </nav>
+
+    <div class="BuildCar">
+        <h1>Special Build</h1>
+        <div class="BuildcarSection">
+            <img src="/assets/Buildyourcar.jpeg" alt="" class="BuildCarPng">
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="TestForm flex">
+            <form action="post">
+                <select name="cars" id="cars">
+                    <option value="cars" hidden>Choose a car</option>
+                    <option value="cars">Mercedes</option>
+                    <option value="cars">BMW</option>
+                    <option value="cars">Volkswagen</option>
+                    <option value="cars">Land Rover</option>
+                    <option value="cars">Ford</option>
+                    <option value="cars">Mitsubishi</option>
+                    <option value="cars">Audi</option>
+                    <option value="cars">Porsche</option>
+                </select>
+                <select name="fuel" id="fuel">
+                    <option value="fuel" hidden>Select fuel</option>
+                    <option value="fuel">Gasoline</option>
+                    <option value="fuel">Diesel</option>
+                </select>
+                <select name="Roof" id="Roof">
+                    <option value="Roof" hidden>Roof</option>
+                    <option value="Roof">Black</option>
+                    <option value="Roof">Carbon</option>
+                    <option value="Roof">White</option>
+                    <option value="Roof">Grey</option>
+                </select>
+                <select name="Hood" id="Hood">
+                    <option value="Hood" hidden>Hood</option>
+                    <option value="Hood">Black</option>
+                    <option value="Hood">Carbon</option>
+                    <option value="Hood">White</option>
+                    <option value="Hood">Grey</option>
+                </select>
+                <select name="Trunk" id="Trunk">
+                    <option value="Trunk" hidden>Trunk</option>
+                    <option value="Trunk">Black</option>
+                    <option value="Trunk">Carbon</option>
+                    <option value="Trunk">White</option>
+                    <option value="Trunk">Grey</option>
+                    <option value="Trunk">Tyre ring</option>
+                </select>
+                <div class="Build">
+                    <button class="buildbutton"><a href="Home.html">Build your car</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
