@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtering Cars</title>
+</head>
+
+<body>
+    <table id="table" border="1"></table>
+    <br>
+    <br>
+    <div class="bodyTag">
+        <div id="inputs">
+            <div><label for="filterType">Filter By type:&nbsp;</label>
+                <select id="filterType">
+                    <option value="" disabled selected hidden>Type</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Convertible">Convertible</option>
+                    <option value="Truck">Truck</option>
+                    <option value="Coupe">Coupe</option>
+                </select>
+            </div>
+            <div>
+                <label for="filterBrand">Filter By brand:&nbsp;</label>
+                <select id="filterBrand">
+                    <option value="" disabled selected hidden>Brand</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Ford">Ford</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Mazda">Mazda</option>
+                    <option value="Ram">Ram</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Kia">Kia</option>
+                    <option value="Subaru">Subaru</option>
+                    <option value="Fiat">Fiat</option>
+                </select>
+            </div>
+            <label for="filterModel">Filter By Model: &nbsp;</label>
+            <input type="text" id="filterModel" placeholder="Model..." />
+            <br>
+            <label for="filterDoors">Filter By Doors:&nbsp;</label>
+            <input type="number" id="filterDoors" placeholder="Doors" />
+            <br>
+            <label for="filterGasType">Filter By Gas Type:&nbsp;</label>
+            <select id="filterGasType">
+                <option value="">Gas Type</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Petrol">Petrol</option>
+                <option value="Gasoline">Gasoline</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Electric">Electric</option>
+            </select>
+            <br>
+            <label for="filterColor">Filter By Color:&nbsp;</label>
+            <input type="text" id="filterColor" placeholder="Color..." />
+            <br>
+            <label type="radio" name="isNew" for="filterIsNew">Filter By New/Old:&nbsp;
+                <br>
+                <input type="radio" name="isNew" id="filterIsNew">New <br>
+                <input type="radio" name="isNew" id="filterIsOld">Old
+                <br>
+                <label for="filterHorsepower">Filter By Horsepower</label>
+                <br>
+                <output>0</output>
+                <input type="range" id="filterHorsepower" value="0" min="1" max="300"
+                    oninput="this.previousElementSibling.value = this.value">
+                <br>
+        </div>
+        <div class="buttons">
+            <button id="searchBtn">Search</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
